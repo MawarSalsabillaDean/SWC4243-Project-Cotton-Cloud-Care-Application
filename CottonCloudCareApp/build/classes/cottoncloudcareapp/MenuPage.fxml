@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="495.0" style="-fx-background-color: E1EEFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cottoncloudcareapp.MenuPageController">
+   <children>
+      <Label fx:id="label_content" layoutX="24.0" layoutY="20.0" text="Content">
+            <font>
+                <Font name="Century Gothic Bold" size="43.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1" endY="0" startX="0" startY="0">
+                    <stops>
+                        <Stop color="#7BD5F5" offset="0.0" /> 
+                        <Stop color="#787FF6" offset="0.5" /> 
+                        <Stop color="#4ADEDE" offset="1.0" /> 
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+      <AnchorPane fx:id="Anchor_Menu" layoutX="24.0" layoutY="129.0" prefHeight="601.0" prefWidth="445.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 35;">
+         <children>
+            <Label fx:id="label_SkinProfile" layoutX="128.0" layoutY="27.0" text="Your Skin Profile">
+               <font>
+                  <Font name="Century Gothic Bold" size="25.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="gridpane_menu" layoutX="21.0" layoutY="102.0" prefHeight="411.0" prefWidth="406.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox fx:id="vbox_quiz" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: FFEBB2; -fx-background-radius: 23;">
+                     <children>
+                        <Label fx:id="label_quiz" text="QUIZ">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="73.0" top="8.0" />
+                           </VBox.margin></Label>
+                        <Separator fx:id="separator_quiz" prefWidth="200.0" />
+                        <ImageView fx:id="image_quiz" fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Quiz.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="62.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="label_quiz2" text="Skin Type Quiz">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="41.0" top="9.0" />
+                           </VBox.margin></Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox fx:id="vbox_skintype" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: FFCFDF; -fx-background-radius: 23;" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="label_skintype" text="SKIN TYPE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="53.0" top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator fx:id="separator_skin" prefWidth="200.0" />
+                        <ImageView fx:id="image_skin" fitHeight="95.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@SkinType.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="50.0" top="7.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="label_skininfo" text="More Skin Type Info">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="25.0" top="9.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox fx:id="vbox_acnetype" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: C5ECBE; -fx-background-radius: 23;" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="label_acnetype" text="ACNE TYPE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="48.0" top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator fx:id="separator_acne" prefWidth="200.0" />
+                        <ImageView fx:id="image_acne" fitHeight="93.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@AcneType.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="43.0" top="8.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="label_acneinfo" text="Acne Type Info">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="39.0" top="7.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox fx:id="vbox_article" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: AEE2FF; -fx-background-radius: 23;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="label_article" text="ARTICLE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="60.0" top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator fx:id="separator_article" prefWidth="200.0" />
+                        <ImageView fx:id="image_article" fitHeight="95.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Article.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="32.0" top="8.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label fx:id="label_articleskincare" text="Skincare's Articles">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="30.0" top="6.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </GridPane.margin>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="image_FAQ" fitHeight="50.0" fitWidth="50.0" layoutX="419.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FAQ.png" />
+         </image></ImageView>
+      <Label fx:id="label_copyright" layoutX="85.0" layoutY="817.0" text="Copyright © 2024 Cotton Cloud Care. All rights reserved.">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

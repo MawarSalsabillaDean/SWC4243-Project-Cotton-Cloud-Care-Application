@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="860.0" prefWidth="495.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #a9ffc6 0%, #7cb6ff 50%, #ab94ff 100%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cottoncloudcareapp.CottonCloudCareController">
+   <children>
+      <ImageView fx:id="image_logo" fitHeight="326.0" fitWidth="263.0" layoutX="133.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_appname" layoutX="79.0" layoutY="453.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 5, 5);" text="COTTON CLOUD CARE" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_trademark" layoutX="181.0" layoutY="504.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 5, 5);" text="LOVE YOUR SKIN" textFill="WHITE">
+         <font>
+            <Font name="Sitka Small" size="15.0" />
+         </font>
+      </Label>
+      <ProgressIndicator fx:id="progressIndicator" layoutX="229.0" layoutY="563.0" progress="0.0" />
+   </children>
+</AnchorPane>

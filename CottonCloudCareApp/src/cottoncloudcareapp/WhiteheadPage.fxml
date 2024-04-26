@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="860.0" prefWidth="495.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cottoncloudcareapp.WhiteheadPageController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1850.0" prefWidth="476.0" style="-fx-background-color: E1EEFF;">
+         <children>
+            <ImageView fx:id="image_backbutton" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="27.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BackButton.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_whitehead" layoutX="95.0" layoutY="19.0" text="Whitehead Acne">
+         <font>
+            <Font name="Century Gothic Bold" size="37.0" />
+         </font>
+         <textFill>
+                <LinearGradient endX="1" endY="0" startX="0" startY="0">
+                    <stops>
+                        <Stop color="#7BD5F5" offset="0.0" /> 
+                        <Stop color="#787FF6" offset="0.5" /> 
+                        <Stop color="#4ADEDE" offset="1.0" /> 
+                    </stops>
+                </LinearGradient>
+            </textFill>
+      </Label>
+      <ImageView fx:id="image_homeButton" fitHeight="35.0" fitWidth="35.0" layoutX="435.0" layoutY="27.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@HomeButton.png" />
+         </image>
+      </ImageView>
+            <ImageView fx:id="image_whitehead" fitHeight="268.0" fitWidth="439.0" layoutX="29.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0, 2, 2);">
+               <image>
+                  <Image url="@Whitehead2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_topic" layoutX="75.0" layoutY="114.0" text="Causes, Prevention and Treatment">
+               <font>
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_descTopic" layoutX="144.0" layoutY="141.0" text="Comprehensive Guide">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Label>
+            <VBox fx:id="vbox_howForm" alignment="CENTER" layoutX="25.0" layoutY="484.0" prefHeight="277.0" prefWidth="448.0">
+               <children>
+                  <ImageView fx:id="image_howForm" fitHeight="95.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@HowAcneForm.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="label_howForm_whitehead" text="How Whiteheads Form">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="label_process_whitehead" text="Formation Process" textFill="#000000b9">
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></Label>
+                  <Text fx:id="text_explanation_whitehead" fill="#000000e5" lineSpacing="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whiteheads, also known as closed comedones, are acne caused by dead skin cells, oil, and bacteria in pores. They have a white or yellowish appearance and are influenced by hormonal changes, diet, excessive oil production, inadequate skin cleansing, and pore-clogging skincare products." textAlignment="JUSTIFY" wrappingWidth="447.85662841796875">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox fx:id="vbox_factors" alignment="CENTER" layoutX="24.0" layoutY="813.0" prefHeight="438.0" prefWidth="452.0">
+               <children>
+                  <ImageView fx:id="image_factors_whitehead" fitHeight="130.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Factor.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="label_factors_whitehead" text="Factors Contributing to Whiteheads">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Text fx:id="text_factors" fill="#000000e5" lineSpacing="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Understanding the factors contributing to whiteheads can help in both treating and preventing this skin condition." textAlignment="JUSTIFY" wrappingWidth="442.9658203125">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font></Text>
+                  <VBox fx:id="vbox_causes" prefHeight="207.0" prefWidth="415.0" style="-fx-background-color: FFFAF1; -fx-background-radius: 15;">
+                     <children>
+                        <Label fx:id="label_factors" text="5 Pivotal Causes">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="165.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_factor_1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Error.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_factor_1" prefHeight="28.0" prefWidth="398.0" text="Hormonal Changes" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_factor_2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Error.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_factor_2" prefHeight="28.0" prefWidth="398.0" text="Diet" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_factor_3" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Error.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_factor_3" prefHeight="28.0" prefWidth="398.0" text="Poor Skin Care" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_factor_4" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Error.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_factor_4" prefHeight="28.0" prefWidth="398.0" text="Stress" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_factor_5" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Error.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_factor_5" prefHeight="28.0" prefWidth="398.0" text="Environmental Factors" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vbox_preventionTreatments" alignment="CENTER" layoutX="24.0" layoutY="1276.0" prefHeight="531.0" prefWidth="452.0">
+               <children>
+                  <ImageView fx:id="image_prevention_whitehead" fitHeight="112.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Treatment.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="label_prevention_whitehead" text="Prevention and Treatment">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Text fx:id="text_prevention" fill="#000000e5" lineSpacing="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Managing whiteheads effectively involves both preventive measures and targeted treatments to reduce outbreaks and improve skin health." textAlignment="JUSTIFY" wrappingWidth="442.9658203125">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </Text>
+                  <VBox fx:id="vbox_prevention_whitehead" prefHeight="286.0" prefWidth="452.0" style="-fx-background-color: FFFAF1; -fx-background-radius: 15;">
+                     <children>
+                        <Label fx:id="label_prevention" alignment="CENTER" text="7 Effective Strategies">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="150.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_prevention_1" prefHeight="28.0" prefWidth="398.0" text="Adopt a Gentle Cleansing Routine" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label_prevention_2" prefHeight="28.0" prefWidth="398.0" text="Choose the Right Products" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_3" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_prevention_3" prefHeight="28.0" prefWidth="398.0" text="Incorporate Topical Treatments" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_4" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_prevention_4" prefHeight="28.0" prefWidth="398.0" text="Exfoliate Regularly" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_5" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_prevention_5" prefHeight="28.0" prefWidth="398.0" text="Maintain a Balanced Diet and Hydration" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_6" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_prevention_6" prefHeight="28.0" prefWidth="398.0" text="Manage Stress Effectively" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="429.0">
+                           <children>
+                              <ImageView fx:id="image_prevention_7" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Checkmark.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label_prevention_7" prefHeight="28.0" prefWidth="360.0" text="Professional Skin Treatments" textAlignment="JUSTIFY" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Century Gothic" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+    </children>
+    </AnchorPane>
+  </content>
+</ScrollPane>

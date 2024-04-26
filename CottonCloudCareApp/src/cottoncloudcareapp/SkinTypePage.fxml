@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="860.0" prefWidth="495.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cottoncloudcareapp.SkinTypePageController">
+   <content>
+       <AnchorPane prefHeight="1200.0" prefWidth="493.0" style="-fx-background-color: E1EEFF;">
+           <children>
+               <Label fx:id="label_skinTypeInfo" layoutX="117.0" layoutY="19.0" text="Skin Type Info">
+            <font>
+                <Font name="Century Gothic Bold" size="40.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1" endY="0" startX="0" startY="0">
+                    <stops>
+                        <Stop color="#7BD5F5" offset="0.0" /> 
+                        <Stop color="#787FF6" offset="0.5" /> 
+                        <Stop color="#4ADEDE" offset="1.0" /> 
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+              <ImageView fx:id="image_backbutton" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="27.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BackButton.png" />
+         </image>
+      </ImageView>
+            <Label fx:id="label_select" layoutX="151.0" layoutY="115.0" text="Select Your Skin Type">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font>
+            </Label>
+               <VBox fx:id="mainContainer" layoutX="26.0" layoutY="152.0" prefHeight="1045.0" prefWidth="445.0" style="-fx-background-color: E1EEFF;">
+             <children>
+                <VBox fx:id="vbox_normal" alignment="CENTER" prefWidth="393.0">
+                   <children>
+                  <HBox fx:id="hbox_normal" prefHeight="76.0" prefWidth="445.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 20 20 0 0;;">
+                     <children>
+                            <ImageView fx:id="img_normal" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                               <image>
+                                  <Image url="@Normal.png" />
+                               </image>
+                            </ImageView>                     
+                            <Button fx:id="button_section1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#toggleSection1" prefHeight="76.0" prefWidth="344.0" style="-fx-background-color: #FFFBFF;" text="Normal Skin Type" textAlignment="CENTER">
+                           <font>
+                              <Font name="Century Gothic Bold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" top="27.0" />
+                           </padding>
+                            </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="11.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                      <VBox fx:id="content1" alignment="CENTER" managed="false" prefHeight="217.0" prefWidth="393.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 0 0 20 20;;" visible="false">
+                         <children>
+                        <Separator prefWidth="200.0" />
+                            <Label fx:id="label_normal" alignment="CENTER" ellipsisString="" lineSpacing="3.0" prefHeight="217.0" prefWidth="393.0" text="When skin is normal, it's neither too oily nor too dry. The texture is smooth, the pores are small, and the skin is glowing without being too shiny or dull. This type of skin isn't very sensitive or flaky, and it keeps its wetness levels and circulation high. Normal skin is easy to take care of, but it still needs basic skincare practices like cleansing, moisturising, and sun protection to stay healthy and look good." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </padding>
+                              </Label>
+                         </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                     </padding>
+                      </VBox>
+                   </children>
+                </VBox>
+            <AnchorPane prefHeight="19.0" prefWidth="445.0" />
+                
+                      <VBox fx:id="vbox_dry" alignment="CENTER" prefWidth="393.0">
+                    <children>
+                        <HBox fx:id="hbox_dry" prefHeight="76.0" prefWidth="445.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 20 20 0 0;">
+                            <children>
+                                <ImageView fx:id="img_dry" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Dry.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="button_section2" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#toggleSection2" prefHeight="76.0" prefWidth="344.0" style="-fx-background-color: #FFFBFF;" text="Dry Skin Type" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="17.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="18.0" top="27.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                     <padding>
+                        <Insets bottom="5.0" left="11.0" top="5.0" />
+                     </padding>
+                        </HBox>
+                        <VBox fx:id="content2" alignment="CENTER" managed="false" prefHeight="257.0" prefWidth="393.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 0 0 20 20;" visible="false">
+                            <children>
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="label_dry" alignment="CENTER" ellipsisString="" lineSpacing="3.0" prefHeight="257.0" prefWidth="393.0" text="People with dry skin don't make enough oil, which makes their skin look tight and sometimes flaky. It can be rough to the touch and have lines that stand out more, making it look dull and less stretchy. This type of skin gets red and irritated easily, and the pores are almost impossible to see. To take care of dry skin, use rich creams with hyaluronic acid and other ingredients that hydrate and feed. Stay away from harsh, drying products that can remove the skin's natural oils." textAlignment="JUSTIFY" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                                    </padding>
+                                </Label>                     
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>                     
+                        </VBox>
+                    </children>
+                </VBox>
+            <AnchorPane prefHeight="19.0" prefWidth="445.0" />
+
+                      <VBox fx:id="vbox_combination" alignment="CENTER" prefWidth="393.0">
+                    <children>
+                        <HBox fx:id="hbox_combination" prefHeight="76.0" prefWidth="445.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 20 20 0 0;">
+                            <children>
+                                <ImageView fx:id="img_combi" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Combination.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="button_section3" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#toggleSection3" prefHeight="76.0" prefWidth="344.0" style="-fx-background-color: #FFFBFF;" text="Combination Skin Type" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="17.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="15.0" top="27.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                     <padding>
+                        <Insets bottom="5.0" left="11.0" top="5.0" />
+                     </padding>
+                        </HBox>
+                        <VBox fx:id="content3" alignment="CENTER" managed="false" prefHeight="244.0" prefWidth="393.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 0 0 20 20;" visible="false">
+                            <children>
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="label_combi" alignment="CENTER" ellipsisString="" lineSpacing="3.0" prefHeight="244.0" prefWidth="393.0" text="Combination skin has features of different skin types. The forehead, nose, and chin are often oily, while the lips are dry or normal. People with this skin type have a lot of problems, like pores that are too big, oily spots, and dry places. Combination skin needs a flexible skincare routine that includes using light, oil-free products on oily areas and more moisturising products on dry areas. Gentle exfoliation is also recommended to keep the skin's structure even." textAlignment="JUSTIFY" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </VBox>
+            <AnchorPane prefHeight="19.0" prefWidth="445.0" />
+                
+                      <VBox fx:id="vbox_oily" alignment="CENTER" prefWidth="393.0">
+                    <children>
+                        <HBox fx:id="hbox_oily" prefHeight="76.0" prefWidth="445.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 20 20 0 0;">
+                            <children>
+                                <ImageView fx:id="img_oily" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Oily.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="button_section4" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#toggleSection4" prefHeight="76.0" prefWidth="344.0" style="-fx-background-color: #FFFBFF;" text="Oily Skin Type" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="17.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="15.0" top="27.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                     <padding>
+                        <Insets bottom="5.0" left="11.0" top="5.0" />
+                     </padding>
+                        </HBox>
+                        <VBox fx:id="content4" alignment="CENTER" managed="false" prefHeight="259.0" prefWidth="393.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 0 0 20 20;" visible="false">
+                            <children>
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="label_oily" alignment="CENTER" ellipsisString="" lineSpacing="3.0" prefHeight="259.0" prefWidth="393.0" text="People with oily skin make too much sebum, which makes the skin look shiny and greasy, especially in the T-zone. It has thicker skin and huge pores that are easy to see. This makes it more likely to get acne and breakouts. To get rid of oily skin effectively, you should use oil-controlling products to clean your face regularly, exfoliate to keep your pores from getting clogged, and moisturise with non-comedogenic products that keep your skin hydrated without adding more oil." textAlignment="JUSTIFY" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </VBox>
+            <AnchorPane prefHeight="19.0" prefWidth="445.0" />
+
+                      <VBox fx:id="vbox_sensitive" alignment="CENTER" prefWidth="393.0">
+                    <children>
+                        <HBox fx:id="hbox_sensitive" prefHeight="76.0" prefWidth="445.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 20 20 0 0;">
+                            <children>
+                                <ImageView fx:id="img_sensitive" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Sensitive.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="button_section5" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#toggleSection5" prefHeight="76.0" prefWidth="344.0" style="-fx-background-color: #FFFBFF;" text="Sensitive Skin Type" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="17.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="15.0" top="27.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                     <padding>
+                        <Insets bottom="5.0" left="11.0" top="5.0" />
+                     </padding>
+                        </HBox>
+                        <VBox fx:id="content5" alignment="CENTER" managed="false" prefHeight="259.0" prefWidth="393.0" style="-fx-background-color: #FFFBFF; -fx-background-radius: 0 0 20 20;" visible="false">
+                            <children>
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="label_sensitive" alignment="CENTER" ellipsisString="" lineSpacing="3.0" prefHeight="259.0" prefWidth="393.0" text="Skin that is sensitive is easily affected by outside factors and skin care products, showing signs like redness, itchiness, burning, and dryness. To keep from irritating the skin, it needs to be handled carefully. Items for sensitive skin shouldn't have any irritants in them, like booze, fragrances, or man-made ingredients. If you want to keep your sensitive skin healthy and comfortable, you need to stick to a simple skincare routine that includes gentle, hypoallergenic products." textAlignment="JUSTIFY" wrapText="true">
+                                    <font>
+                                        <Font name="Century Gothic" size="15.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" top="5.0" />
+                                    </padding>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </VBox>                                              
+             </children>
+          </VBox>
+           </children>
+       </AnchorPane>    
+   </content>
+</ScrollPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="860.0" prefWidth="495.0" style="-fx-background-color: E1EEFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cottoncloudcareapp.FourthArticlePageController">
+    <children>
+        <ImageView fx:id="image_backbutton" fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="27.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@BackButton.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="label_fourthArticle" layoutX="95.0" layoutY="19.0" text="Simple Skincare">
+            <font>
+                <Font name="Century Gothic Bold" size="40.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1" endY="0" startX="0" startY="0">
+                    <stops>
+                        <Stop color="#7BD5F5" offset="0.0" /> 
+                        <Stop color="#787FF6" offset="0.5" /> 
+                        <Stop color="#4ADEDE" offset="1.0" /> 
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <ImageView fx:id="image_homeButton" fitHeight="35.0" fitWidth="35.0" layoutX="439.0" layoutY="27.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@HomeButton.png" />
+            </image>
+        </ImageView>
+        <WebView fx:id="webView" layoutX="24.0" layoutY="116.0" prefHeight="690.0" prefWidth="450.0" />
+    </children>
+</AnchorPane>
